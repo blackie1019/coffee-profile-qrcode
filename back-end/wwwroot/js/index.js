@@ -1,0 +1,6 @@
+function abc (){
+
+}
+
+abc();
+def();

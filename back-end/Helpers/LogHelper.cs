@@ -16,7 +16,7 @@ namespace back_end.Helpers
         private LogHelper()
         {
             repository = LogManager.CreateRepository(Consts.ApplicationConst.Log4netRepoName);
-            XmlConfigurator.Configure(repository, new FileInfo(Consts.ApplicationConst.Log4netFileName));
+            XmlConfigurator.Configure(repository, new FileInfo(Consts.ApplicationConst.Log4netFilePath));
         }
 
         public ILog GetLog(string typeOfName)
