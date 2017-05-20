@@ -7,12 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace back_end.ApiControllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class CoffeeBeanApiController : Controller
     {
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            _authorRepository.List()
             return new string[] { "value1", "value2" };
         }
 
