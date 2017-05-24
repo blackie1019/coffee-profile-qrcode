@@ -13,7 +13,6 @@ namespace back_end.ApiControllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            _authorRepository.List()
             return new string[] { "value1", "value2" };
         }
 

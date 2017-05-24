@@ -1,5 +1,0 @@
-function def (){
-
-}
-
-def();
