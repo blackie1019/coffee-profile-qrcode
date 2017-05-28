@@ -1,17 +1,19 @@
 {
   "name": "back-end",
   "version": "1.0.0",
-  "description": "",
+  "description": "Minimal Boilerplate for ASP.NET Core with React Hot Loader",
   "main": "index.js",
   "scripts": {
+    "set-dev-env":"export ASPNETCORE_ENVIRONMENT=Development",
+    "set-prod-env":"export ASPNETCORE_ENVIRONMENT=Production",
     "dev": "webpack --config ./webpack/dev.config.js",
-    "dev-watch":"webpack-dev-server --hot --config ./webpack/dev.config.js --open",
+    "dev-watch": "webpack-dev-server --port 8081 --hot --config ./webpack/dev.config.js",
     "publish": "webpack --config ./webpack/publish.config.js",
     "server": "dotnet run",
-    "start": "concurrently \"npm run dev-watch\" \"npm run server\"",
+    "start": "npm run set-dev-env;concurrently \"npm run dev-watch\" \"npm run server\"",
     "lint": ""
   },
-  "author": "",
+  "author": "Blackie Tsai",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7",
@@ -22,7 +24,8 @@
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "concurrently": "^3.4.0",
     "eslint": "^3.19.0",
