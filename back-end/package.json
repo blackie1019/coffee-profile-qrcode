@@ -4,8 +4,8 @@
   "description": "Minimal Boilerplate for ASP.NET Core with React Hot Loader",
   "main": "index.js",
   "scripts": {
-    "set-dev-env":"export ASPNETCORE_ENVIRONMENT=Development",
-    "set-prod-env":"export ASPNETCORE_ENVIRONMENT=Production",
+    "set-dev-env": "export ASPNETCORE_ENVIRONMENT=Development",
+    "set-prod-env": "export ASPNETCORE_ENVIRONMENT=Production",
     "dev": "webpack --config ./webpack/dev.config.js",
     "dev-watch": "webpack-dev-server --port 8081 --hot --config ./webpack/dev.config.js",
     "publish": "webpack --config ./webpack/publish.config.js",
@@ -17,8 +17,10 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "material-ui": "^0.18.1",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

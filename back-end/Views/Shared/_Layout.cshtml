@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@ViewData["Title"] - front_end</title>
-</title>
+    <environment names="Development">
+      <link rel="stylesheet" href="~/css/main.css">
+    </environment>
+    <environment names="Staging,Production">
+      <link rel="stylesheet" href="~/css/main.css">
+    </environment>
 </head>
 <body>
     @RenderBody()

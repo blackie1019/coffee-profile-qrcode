@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Roboto'; /*a name to be used later*/
+    src: url('/fonts/Roboto-Regular.ttf'); /*URL to font*/
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 13px;
+  line-height: 20px;
+}
