@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { AppContainer } from 'react-hot-loader';
-import Root from './containers/Root';
+import Home from './containers/Home';
 
 injectTapEventPlugin();
 
@@ -14,10 +14,10 @@ const render = Component => {
   </AppContainer>, document.getElementById('app'));
 };
 
-render(Root);
+render(Home);
 
 if (module.hot) {
-	module.hot.accept('./containers/Root', () => {
-		render(Root);
+	module.hot.accept('./containers/Home', () => {
+		render(Home);
 	});
 }
